@@ -16,8 +16,16 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    overflow: scroll;
+    overflow-x: auto;
     gap: 15px;
+}
+
+.superior__seccion__container::-webkit-scrollbar {
+    display: none; 
+}
+
+.superior__item {
+    display: inline-block;
 }
 
 /* Menú */
@@ -129,6 +137,10 @@
     .menu__container {
         width: 239px;
         overflow: scroll;
+    }
+    
+    .menu__container::-webkit-scrollbar {
+        display: none; 
     }
 
     .menu__lista:nth-child(2),
