@@ -52,6 +52,10 @@
     gap: 5px;
 }
 
+.menu__itens:hover {
+    border-radius: 20px;
+}
+
 .menu__lista:nth-child(2),
 .menu__lista:nth-child(3),
 .menu__lista:nth-child(4) {
@@ -65,10 +69,19 @@
     flex-grow: 1;
 }
 
+.videos__item,
+.videos__item iframe {
+    border-radius: 20px;
+}
+
 .videos__container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.videos__container video {
+    object-fit: cover;
 }
 
 /* DESAFIO DESCRIPCIÓN DE LOS VIDEOS */ 
